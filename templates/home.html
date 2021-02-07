@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+
+<nav class="nav">
+    <div class="nav-item">
+        <a href="{% url 'home' %}" class="nav-link">Home</a>
+    </div>
+    <div class="nav-item">
+        <a href="{% url 'about' %}" class="nav-link">About</a>
+    </div>
+</nav>
+
+<div class="container p-2">
+    <h1 class="display-4">Wurd COUNT</h1>
+
+        <div class="row">
+            <div class="col-md-4 align-items-left p-5">
+                <form action="{% url 'count' %}">
+                    <textarea name="fulltext" cols="40" rows="10"></textarea>
+                    <input type="submit" value="Count!" class="btn btn-primary mt-3">
+                </form>
+            </div>
+        </div>
+
+</div>
+
